@@ -1,44 +1,156 @@
-import { Center, Heading } from "@chakra-ui/react";
-import { faComments, faGears, faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
-import ProcessModal from "./ProcessModal";
+import { Box, Flex, Heading, Text, Image } from "@chakra-ui/react";
+import logo from "../../assets/sdaire_logo_rm.png";
+import { keyframes } from "@emotion/react";
 
-const Process = () => {
+const float = keyframes`
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+`;
+
+const ProcessSection = () => {
   return (
-    <div>
-      <Center>
-        <Heading color="#004F87" fontSize={50} mt={130}>
-          Notre Process
-        </Heading>
-      </Center>
+    <Box
+      position="relative"
+      w="full"
+      py={{ base: 10, md: 20 }}
+      className="bg-transparent flex flex-col items-center"
+    >
+      {/* Titre */}
+      <Heading
+        as="h1"
+        size={{ base: "xl", md: "3xl" }}
+        color="#004F87"
+        fontWeight="bold"
+        mb={{ base: 10, md: 16 }}
+        textAlign="center"
+        animation={`${float} 2s ease-in-out infinite`}
+      >
+        Notre Process
+      </Heading>
 
-      
-      <div className="w-full bg-white px-4 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto justify-items-center">
-          <ProcessModal
-            title={"Bureau d'étude"}
-            subtitle={
-              "Préparation des différents plans des produits en utilisant les outils informatiques les plus adéquats avec un personnel bien formé."
-            }
-            icon={faComments}
-          />
-          <ProcessModal
-            title={"Fabrication"}
-            subtitle={
-              "Les machines utilisées pour la coupe, le montage par fil ou sans fil et le contrôle sont des opérations bien étudiées et planifiées afin de combiner entre qualité et efficience."
-            }
-            icon={faGears}
-          />
-          <ProcessModal
-            title={"Entretien"}
-            subtitle={
-              "Les gaines textiles sont entretenu dans nos locaux et sont traitées pour leur donner une longue vie."
-            }
-            icon={faScrewdriverWrench}
-          />
-        </div>
-      </div>
-    </div>
+      {/* Layout principal */}
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        justify="center"
+        align={{ base: "center", md: "flex-start" }}
+        gap={{ base: 10, md: 10 }}
+        maxW="900px"
+        w="full"
+      >
+        {/* Colonne gauche */}
+        <Flex
+          direction="column"
+          gap={{ base: 8, md: 10 }}
+          flex="1"
+          mt={{ base: 0, md: 10 }}
+          align={{ base: "center", md: "flex-start" }}
+        >
+          {/* Bureau d'étude */}
+          <Box
+            bg="#4CABE1"
+            color="white"
+            p={{ base: 5, md: 8 }}
+            rounded="2xl"
+            shadow="lg"
+            position="relative"
+            w={{ base: "90%", md: "600px" }}
+            h={{ base: "auto", md: "380px" }}
+            transition="all 0.3s ease"
+            _hover={{
+              transform: "translateY(-10px) scale(1.02)",
+              boxShadow: "0 8px 25px rgba(76, 171, 225, 0.5)",
+              filter: "brightness(1.1)",
+            }}
+          >
+            <Text
+              fontWeight="bold"
+              fontSize={{ base: "22px", md: "32px" }}
+              mb={3}
+            >
+              Bureau d’étude
+            </Text>
+            <Text fontSize={{ base: "16px", md: "22px" }} lineHeight="1.6">
+              Préparation des différents plans des produits en utilisant les
+              outils informatiques les plus adéquats avec un personnel bien formé.
+            </Text>
+            <Image
+              src={logo}
+              alt="Logo"
+              position="absolute"
+              bottom="10px"
+              right="15px"
+              w={{ base: "60px", md: "100px" }}
+              opacity={0.8}
+            />
+          </Box>
+
+          {/* Entretien */}
+          <Box
+            bg="#194A7F"
+            color="white"
+            p={{ base: 5, md: 8 }}
+            rounded="2xl"
+            shadow="lg"
+            w={{ base: "90%", md: "450px" }}
+            h={{ base: "auto", md: "320px" }}
+            ml={{ base: 0, md: "150px" }}
+            mt={{ base: 0, md: "-30px" }}
+            transition="all 0.3s ease"
+            _hover={{
+              transform: "translateY(-10px) scale(1.02)",
+              boxShadow: "0 8px 25px rgba(25, 74, 127, 0.5)",
+              filter: "brightness(1.1)",
+            }}
+          >
+            <Text
+              fontWeight="bold"
+              fontSize={{ base: "22px", md: "32px" }}
+              mb={3}
+            >
+              Entretien
+            </Text>
+            <Text fontSize={{ base: "16px", md: "22px" }} lineHeight="1.6">
+              Les gaines textiles sont entretenues dans nos locaux et sont
+              traitées pour leur donner une longue vie.
+            </Text>
+          </Box>
+        </Flex>
+
+        {/* Colonne droite */}
+        <Box
+          bg="#004F87"
+          color="white"
+          p={{ base: 5, md: 8 }}
+          rounded="2xl"
+          shadow="lg"
+          w={{ base: "90%", md: "300px" }}
+          h={{ base: "auto", md: "550px" }}
+          ml={{ base: 0, md: "-30px" }}
+          textAlign={{ base: "center", md: "left" }}
+          transition="all 0.3s ease"
+          _hover={{
+            transform: "translateY(-10px) scale(1.02)",
+            boxShadow: "0 8px 25px rgba(0, 79, 135, 0.5)",
+            filter: "brightness(1.1)",
+          }}
+        >
+          <Text
+            fontWeight="bold"
+            fontSize={{ base: "22px", md: "32px" }}
+            mb={3}
+          >
+            Fabrication
+          </Text>
+          <Text fontSize={{ base: "16px", md: "22px" }} lineHeight="1.6">
+            Les machines utilisées pour la coupe, le montage par fil ou sans fil
+            et le contrôle sont des opérations bien étudiées et planifiées afin
+            de combiner entre qualité et efficience.
+          </Text>
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 
-export default Process;
+export default ProcessSection;

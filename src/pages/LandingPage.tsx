@@ -24,7 +24,7 @@ const LandingPage = () => {
       
         <NosProduit />
         <Center>
-        <Heading mt={100} color="#004F87" fontSize={50} >Opinions des clients</Heading>
+        <Heading mt={100} color="#004F87" fontSize={50}   >Opinions des clients</Heading>
         </Center>
         <Center mt={100}>
         <SlideSwiper slides={slidesData} />

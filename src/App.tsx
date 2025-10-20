@@ -1,6 +1,4 @@
-
 import LandingPage from "./pages/LandingPage"
-
 
 const App = () => {
   return (
@@ -9,5 +7,3 @@ const App = () => {
 }
 
 export default App
-
-
