@@ -43,7 +43,7 @@ const ProductsSlide: React.FC<SlideSwiperProps> = ({ slides }) => {
           spaceBetween: 30,
         },
       }}
-      style={{ width: "100%", maxWidth: "1300px", paddingBottom: "60px", paddingLeft: "20px", paddingRight: "20px", paddingTop: "18px" }}
+      style={{ width: "100%", maxWidth: "1200px", paddingBottom: "60px" }}
     >
       {slides.map((product) => (
      <SwiperSlide
