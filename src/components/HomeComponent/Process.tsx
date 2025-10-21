@@ -50,7 +50,7 @@ const ProcessSection = () => {
         >
           {/* Bureau d'étude */}
                     <Box
-            bg="#4CABE1"
+            bg="#68B8E5"
             color="white"
             p={{ base: 6, md: 8 }}
             rounded="2xl"

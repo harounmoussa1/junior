@@ -8,6 +8,7 @@ import {
   Flex,
   Link,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 interface ProduitModalProps {
   name: string;
@@ -16,6 +17,9 @@ interface ProduitModalProps {
   link: string;
 }
 
+const MotionCard = motion(Card);
+const MotionButton = motion(Flex);
+
 const ProduitModal: React.FC<ProduitModalProps> = ({
   name,
   description,
@@ -23,21 +27,23 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
   link,
 }) => {
   return (
-    <Card
-  h="600px"
-  w="full"
-  maxW="550px"
-  boxShadow= "10px 25px 25px rgba(22, 21, 27, 0.3)"
-  display="flex"
-  flexDirection="column"
-  transition="all 0.4s ease"
-  _hover={{
-    transform: "translateY(-10px) scale(1.02)",
-    boxShadow: "0 10px 25px rgba(0, 79, 135, 0.25)",
-  }}
->
-      <CardBody display="flex" flexDirection="column" flex="1" p="4" >
-        {/* Product Image */}
+    <MotionCard
+      h="600px"
+      w="full"
+      maxW="380px"
+      boxShadow="lg"
+      display="flex"
+      flexDirection="column"
+      borderRadius="xl"
+      transition="all 0.3s ease"
+      boxShadow="10px 10px 15px rgba(0, 0, 0, 0.4)"
+      whileHover={{ scale: 1.03 }}
+      _hover={{
+        boxShadow: "8px 20px 15px rgba(0, 0, 0, 0.4)",
+      }}
+    >
+      <CardBody display="flex" flexDirection="column" flex="1" p="4">
+        {/* Image du produit */}
         <Image
           src={imageUrl}
           alt={name}
@@ -47,45 +53,42 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           objectFit="cover"
         />
 
-        {/* Title + Description */}
+        {/* Titre + Description */}
         <Stack mt="4" spacing="3" flex="1">
           <Heading size="md">{name}</Heading>
-          <Text flex="1">{description}</Text>
+          <Text flex="1" color="gray.600">
+            {description}
+          </Text>
         </Stack>
 
-        {/* Voir Plus Button */}
+        {/* Bouton "Voir plus" */}
         <Flex justify="center" mt="auto">
-          <Link
-            href={link}
-            _hover={{ textDecoration: "none" }}
-            w="full"
-          >
-            <Flex
+          <Link href={link} _hover={{ textDecoration: "none" }} w="full">
+            <MotionButton
               as="button"
               w="full"
-              h="40px"
+              h="45px"
               bg="transparent"
-              color="#0B2131"
+              color="black"
               justify="center"
               align="center"
-              border="2px solid #0B2131"
               borderRadius="md"
+              border={"1px solid black"}
               fontWeight="bold"
-              transition="all 0.3s ease"
-              _hover={{
-                bg: "#0B2131",
+              whileHover={{
+                scale: 1.05,
+                backgroundColor: "#000000ff", // bleu plus foncé
+                boxShadow: "0 20px 15px rgba(0, 0, 0, 0.4)",
                 color: "white",
-                transform: "translateY(-3px)",
-                boxShadow: "0 6px 15px rgba(0, 0, 0, 3)",
               }}
+              whileTap={{ scale: 0.98 }}
             >
               Voir plus
-            </Flex>
-
+            </MotionButton>
           </Link>
         </Flex>
       </CardBody>
-    </Card>
+    </MotionCard>
   );
 };
 
