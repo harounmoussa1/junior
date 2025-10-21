@@ -1,12 +1,7 @@
 import { Box, Center, Flex, Link, Text } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
-import landingpageimg from "../../assets/hero.png";
 
-// Animation d’apparition douce
-const fadeIn = keyframes`
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-`;
+// Animation d'apparition douce (retirée car non utilisée pour le fond)
 
 // Animation de flottement permanent
 const float = keyframes`
@@ -17,35 +12,22 @@ const float = keyframes`
 
 const HeroSection = () => {
   return (
-    <Box position="relative" h="1100px" w="full" overflow="hidden">
-      {/* Image + gradient overlay */}
-      <Box
-        position="absolute"
-        inset="0"
-        backgroundImage={`linear-gradient(
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0),
-            rgba(255, 255, 255, 255)
-          ), url(${landingpageimg})`}
-        backgroundSize="cover"
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
-        zIndex={0}
-        animation={`${fadeIn} 1.5s ease-out`}
-      />
-
+    <Box position="relative" h="1100px" w="full" overflow="hidden" zIndex={5}>
       {/* Contenu au-dessus du gradient */}
-      <Center position="relative" zIndex={1} h="100%">
+      <Center position="relative" h="100%" zIndex={7} >
+        {" "}
         <Box
           textAlign="center"
           color="white"
-          animation={`${float} 3s ease-in-out infinite`} // 👈 floating permanent
+          mt="-170px"
+          animation={`${float} 3s ease-in-out infinite`}
         >
           <Text
             as="b"
             fontSize={{ base: "70px", md: "98px" }}
             display="block"
             textShadow="2px 4px 15px rgba(0, 0, 0, 0.8)"
+            color={"white"}
           >
             SDair Tunisie
           </Text>

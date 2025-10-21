@@ -15,6 +15,7 @@ const ProcessSection = () => {
       w="full"
       py={{ base: 10, md: 20 }}
       className="bg-transparent flex flex-col items-center"
+      mt="-240px"
     >
       {/* Titre */}
       <Heading
