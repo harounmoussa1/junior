@@ -1,4 +1,4 @@
-import airbagth1 from "../../assets/airbagImg/airbagth1.jpeg"
+import airbagth1 from "../../assets/airbagImg/airbagth1.png"
 import airbagth2 from "../../assets/airbagImg/airbagth2.jpeg"
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import ProductDetail from '../../components/productdetailpages/ProductDetailPage';
