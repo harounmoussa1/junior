@@ -31,15 +31,13 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
       h="600px"
       w="full"
       maxW="380px"
-      boxShadow="lg"
       display="flex"
       flexDirection="column"
       borderRadius="xl"
-      transition="all 0.3s ease"
       boxShadow="10px 10px 15px rgba(0, 0, 0, 0.4)"
-      whileHover={{ scale: 1.03 }}
       _hover={{
         boxShadow: "8px 20px 15px rgba(0, 0, 0, 0.4)",
+        scale: 1.03 ,
       }}
     >
       <CardBody display="flex" flexDirection="column" flex="1" p="4">
