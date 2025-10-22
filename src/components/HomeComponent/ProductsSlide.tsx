@@ -22,17 +22,19 @@ interface SlideSwiperProps {
 const ProductsSlide: React.FC<SlideSwiperProps> = ({ slides }) => {
   return (
     <Swiper
-      pagination={{ clickable: true }}
+      pagination={{ clickable: true, dynamicBullets: true }}
       modules={[Pagination]}
       className="mySwiper"
       breakpoints={{
         0: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 12,
+          centeredSlides: true,
         },
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
+          spaceBetween: 12,
+          centeredSlides: true,
         },
         768: {
           slidesPerView: 2,
@@ -50,7 +52,7 @@ const ProductsSlide: React.FC<SlideSwiperProps> = ({ slides }) => {
      key={product.id}
      className="flex justify-center items-center justify-items-center"
    >
-     <div className="w-full max-w-[600px]">
+     <div className="w-full md:max-w-[600px]">
        <ProduitModal
          name={product.name}
          description={product.description}
