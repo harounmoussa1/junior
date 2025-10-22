@@ -1,4 +1,12 @@
-
+// Import images
+import gainTextileImg from '../assets/productsImages/gain_a.jpg';
+import filtreImg from '../assets/productsImages/filtre_a.jpg';
+import manchetteImg from '../assets/manchette.jpeg';
+import couvercleImg from '../assets/couvercleImg/c1.jpeg';
+import matelasImg from '../assets/productsImages/matelas_a.jpg';
+import airbagImg from '../assets/airbagImg/airbagth1.png';
+import tenteImg from '../assets/tenteIMG/couvercle1.jpg';
+import jeuxImg from '../assets/productsImages/jeux_a.jpg';
 
 export const Mission = `Changer la perception des produits tunisiens en démontrant qu ils rivalisent en qualité, et souvent surpassent, les produits européens. Cela est rendu possible grâce au savoir-faire de nos équipes spécialisées en fabrication et en méthode.
 En outre, nous offrons la possibilité de personnaliser vos gaines textiles avec des empreintes publicitaires pour mettre en avant vos marques.
@@ -14,56 +22,56 @@ export const products = [
     id: 1,
     name: "Gaines textiles",
     description: "Toute sorte de forme à savoir les circulaires, demi-circulaires, oblong, quart de cercle.",
-    imageUrl: "/src/assets/productsImages/gain_a.JPG",
+    imageUrl: gainTextileImg,
     link: "/produits/climatisation/gains-textiles",
   },
   {
     id: 2,
     name: "Filtres pour les unités gainables",
     description: "Les filtres glissières se trouvant à l’arrière des unités gainables qui doivent être tout le temps propres.",
-    imageUrl: "/src/assets/productsImages/filtre_a.jpg",
+    imageUrl: filtreImg,
     link: "/produits/climatisation/filtres",
   },
   {
     id: 3,
     name: "Manchettes souples",
     description: "Toute sorte de manchettes souples à savoir les rectangulaires-rectangulaire, de transformation rectangulaire- circulaires, rond-ronds, etc….",
-    imageUrl: "/src/assets/manchette.jpeg",
+    imageUrl: manchetteImg,
     link: "/produits/climatisation/manchettes-souples",
   },
   {
     id: 4,
     name: "Couvercles de protection",
     description: "Le couvercle de protection est conçu pour offrir une couverture fiable et sécurisée pour différents équipements, réservoirs, palettes ou dispositifs sensibles. Il protège contre la poussière, les débris, l'humidité et autres éléments extérieurs susceptibles d'endommager vos installations.",
-    imageUrl: "/src/assets/couvercleImg/c1.jpeg",
+    imageUrl: couvercleImg,
     link: "/produits/isolation-thermique/couvercles",
   },
   {
     id: 5,
     name: "Matelas de protection thermique",
     description: "La protection thermique des vannes permet d’isoler efficacement les équipements contre les pertes de chaleur, tout en assurant la sécurité du personnel contre les brûlures. Ces isolations sont conçues pour résister à des températures élevées.",
-    imageUrl: "/src/assets/productsImages/matelas_a.JPG",
+    imageUrl: matelasImg,
     link: "/produits/isolation-thermique/matelas",
   },
   {
   id: 6,
   name: "Airbags thermiques",
   description: "Les air-bag thermiques sont utilisés pour réduire les espaces vides dans une chambre froide pour les produits laitiers",
-  imageUrl: "/src/assets/airbagImg/airbagth1.jpeg",
+  imageUrl: airbagImg,
   link: "/produits/airbags",
 },
 {
   id: 7,
   name: "Tente à usage multiple",
   description: "Une tente à usage multiple est idéale pour les sorties en famille, les voyages, les pique-niques, les fêtes ou même comme abri temporaire à la maison. Facile à installer et à transporter, elle offre une bonne protection contre le soleil, le vent et la pluie.",
-  imageUrl: "/src/assets/tenteIMG/couvercle1.jpg",
+  imageUrl: tenteImg,
   link: "/produits/tente",
 },
 {
   id: 8,
   name: "Jeux Gonflables",
   description: "Ils sont une solution idéale pour animer vos événements: fêtes d’anniversaire, journées familiales, kermesses, événements scolaires ou animations commerciales. Faciles à installer, sécurisés et très appréciés des enfants.",
-  imageUrl: "/src/assets/productsImages/jeux_a.jpg",
+  imageUrl: jeuxImg,
   link: "/produits/jeux-gonflables",
 },
 ];

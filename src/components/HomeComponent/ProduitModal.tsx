@@ -24,28 +24,35 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
 }) => {
   return (
     <Card
-      h="600px"
-      w="full" // Make it responsive
-      maxW="380px" // Max width for large screens
+      h={{ base: "520px", sm: "540px", md: "600px" }}
+      w="full"
+      maxW={{ base: "100%", md: "380px" }}
       boxShadow="lg"
       display="flex"
       flexDirection="column"
     >
-      <CardBody display="flex" flexDirection="column" flex="1" p="4">
+      <CardBody display="flex" flexDirection="column" flex="1" p={{ base: 3, md: 4 }}>
         {/* Product Image */}
         <Image
           src={imageUrl}
           alt={name}
           borderRadius="lg"
-          h="260px"
+          h={{ base: "200px", md: "260px" }}
           w="100%"
           objectFit="cover"
         />
 
         {/* Title + Description */}
-        <Stack mt="4" spacing="3" flex="1">
-          <Heading size="md">{name}</Heading>
-          <Text flex="1">{description}</Text>
+        <Stack mt={{ base: 3, md: 4 }} spacing={{ base: 2, md: 3 }} flex="1" overflow="hidden">
+          <Heading size={{ base: "sm", md: "md" }}>{name}</Heading>
+          <Text 
+            flex="1" 
+            fontSize={{ base: "sm", md: "md" }}
+            noOfLines={{ base: 4, md: 5 }}
+            overflow="hidden"
+          >
+            {description}
+          </Text>
         </Stack>
 
         {/* Voir Plus Button */}
@@ -58,7 +65,7 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
             <Flex
               as="button"
               w="full"
-              h="40px"
+              h={{ base: "40px", md: "45px" }}
               bg="blue.500"
               color="white"
               justify="center"

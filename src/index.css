@@ -151,3 +151,24 @@
 }
 
 /* === BASE STYLES === */
+
+/* === SWIPER CUSTOM STYLES === */
+.mySwiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.mySwiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* Pagination bullets styling */
+.swiper-pagination-bullet {
+  background: #004F87;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
