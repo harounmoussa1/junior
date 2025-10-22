@@ -8,7 +8,6 @@ import {
   Flex,
   Link,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 
 interface ProduitModalProps {
   name: string;
@@ -17,9 +16,6 @@ interface ProduitModalProps {
   link: string;
 }
 
-const MotionCard = motion(Card);
-const MotionButton = motion(Flex);
-
 const ProduitModal: React.FC<ProduitModalProps> = ({
   name,
   description,
@@ -27,21 +23,16 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
   link,
 }) => {
   return (
-    <MotionCard
+    <Card
       h="600px"
-      w="full"
-      maxW="380px"
+      w="full" // Make it responsive
+      maxW="380px" // Max width for large screens
+      boxShadow="lg"
       display="flex"
       flexDirection="column"
-      borderRadius="xl"
-      boxShadow="10px 10px 15px rgba(0, 0, 0, 0.4)"
-      _hover={{
-        boxShadow: "8px 20px 15px rgba(0, 0, 0, 0.4)",
-        scale: 1.03 ,
-      }}
     >
       <CardBody display="flex" flexDirection="column" flex="1" p="4">
-        {/* Image du produit */}
+        {/* Product Image */}
         <Image
           src={imageUrl}
           alt={name}
@@ -51,42 +42,37 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           objectFit="cover"
         />
 
-        {/* Titre + Description */}
+        {/* Title + Description */}
         <Stack mt="4" spacing="3" flex="1">
           <Heading size="md">{name}</Heading>
-          <Text flex="1" color="gray.600">
-            {description}
-          </Text>
+          <Text flex="1">{description}</Text>
         </Stack>
 
-        {/* Bouton "Voir plus" */}
+        {/* Voir Plus Button */}
         <Flex justify="center" mt="auto">
-          <Link href={link} _hover={{ textDecoration: "none" }} w="full">
-            <MotionButton
+          <Link
+            href={link}
+            _hover={{ textDecoration: "none" }}
+            w="full"
+          >
+            <Flex
               as="button"
               w="full"
-              h="45px"
-              bg="transparent"
-              color="black"
+              h="40px"
+              bg="blue.500"
+              color="white"
               justify="center"
               align="center"
               borderRadius="md"
-              border={"1px solid black"}
               fontWeight="bold"
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: "#000000ff", // bleu plus foncé
-                boxShadow: "0 20px 15px rgba(0, 0, 0, 0.4)",
-                color: "white",
-              }}
-              whileTap={{ scale: 0.98 }}
+              _hover={{ bg: "blue.600" }}
             >
               Voir plus
-            </MotionButton>
+            </Flex>
           </Link>
         </Flex>
       </CardBody>
-    </MotionCard>
+    </Card>
   );
 };
 
