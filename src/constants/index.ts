@@ -16,7 +16,7 @@ export const ABOUT_TEXT = `SDair (SARL), fondée en août 2014, est la première
 
 Installée à Jemmel, dans le gouvernorat de Monastir, SDair collabore principalement avec des installateurs et des revendeurs spécialisés en climatisation et diffusion de l’air.
 `;
-export const Fondateur_Presentation ='Ben Lassoued Mohamed Riadh, ingénieur textile doté d’une dizaine d’années d’expérience dans le domaine du textile \n et 8 ans dans le domaine de la diffusion de l’air et principalement dans la fabrication des gaines textiles et des manchettes souples, a suivi des formations de management de la qualité (ISO 9001) et du PNL, met son savoir-faire au service de ces clients.';
+export const Fondateur_Presentation ='BEN LASSOUED Mohamed Riadh, ingénieur textile, met son savoir-faire au service de ses clients. Doté d’une expérience datant de l’an 2000 dans le secteur textile, et depuis 2009 dans la diffusion de l’air et plus précisément dans la fabrication de gaines textiles et de manchettes souples, il a également suivi des formations en management de la qualité (ISO 9001) et en planification neuro-linguistique (PNL).';
 export const products = [
   {
     id: 1,

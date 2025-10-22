@@ -25,11 +25,16 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
   return (
     <Card
       h="600px"
-      w="full" // Make it responsive
-      maxW="380px" // Max width for large screens
-      boxShadow="lg"
+      w="full"
+      maxW="380px"
+      boxShadow="20px 0px 15px rgba(0, 0, 0, 0.2)" // ombre normale
       display="flex"
       flexDirection="column"
+      transition="all 0.3s ease"
+      _hover={{ boxShadow: "xl",
+                transform: "translateY(-6px)", // légère élévation
+
+       }} // ombre plus forte au survol
     >
       <CardBody display="flex" flexDirection="column" flex="1" p="4">
         {/* Product Image */}
@@ -48,7 +53,6 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           <Text flex="1">{description}</Text>
         </Stack>
 
-        {/* Voir Plus Button */}
         <Flex justify="center" mt="auto">
           <Link
             href={link}
@@ -57,15 +61,23 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           >
             <Flex
               as="button"
+              border={"1px solid black"}
               w="full"
               h="40px"
-              bg="blue.500"
-              color="white"
+              bg="transparent"
+              color="black"
               justify="center"
               align="center"
               borderRadius="md"
-              fontWeight="bold"
-              _hover={{ bg: "blue.600" }}
+              fontWeight="semibold"
+              boxShadow="md"
+              transition="all 0.3s ease"
+             _hover={{
+                  bgGradient: "linear(to-r, #104868ff, #35627cff)",
+                  borderColor: "transparent",
+                  color:"white",
+                  boxShadow: "0 0 15px rgba(0, 119, 182, 0.6)",
+                }}
             >
               Voir plus
             </Flex>

@@ -101,7 +101,7 @@ const AproposPage = () => {
       {/* Card */}
       <Center mt="50px">
         <Card
-          direction={{ base: 'column', sm: 'row' }}
+          direction={{ base: 'column', xl: 'row' }}
           overflow="hidden"
           variant="outline"
           gap="10px"
@@ -192,7 +192,7 @@ const AproposPage = () => {
       </Center>
 <Center mt={20}>
 {slidesData.length > 0 ? (
-    <SlideSwiper slides={slidesData} />
+    <SlideSwiper slides={slidesData} showMultiple={true} />
   ) : (
     <Text>Chargement des avis...</Text>
   )}
@@ -258,6 +258,9 @@ const AproposPage = () => {
     >Envoyer</Button>
   </form>
 </Center>
+<br />
+<br />
+<br />
 
     </div>
   );

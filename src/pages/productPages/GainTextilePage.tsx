@@ -4,12 +4,23 @@ import ImgTextile2 from "../../assets/gaineTextileImg/ImgTextile2.jpg";
 import ImgTextile3 from "../../assets/gaineTextileImg/ImgTextil3.jpg";
 import obl1 from "../../assets/gaineTextileImg/obl1.jpeg";
 import obl2 from "../../assets/gaineTextileImg/obl2.jpeg";
+import gaine1 from "../../assets/gaineTextileImg/gaine1.png";
+import gaine2 from "../../assets/gaineTextileImg/gaine2.png";
+import gaine3 from "../../assets/gaineTextileImg/gaine3.png";
+import gaine4 from "../../assets/gaineTextileImg/gaine4.png";
+import gaine5 from "../../assets/gaineTextileImg/gaine5.png";
+import gaine6 from "../../assets/gaineTextileImg/gaine6.png";
+import gaine7 from "../../assets/gaineTextileImg/gaine7.png";
+import gaine8 from "../../assets/gaineTextileImg/gaine8.png";
+import gaine9 from "../../assets/gaineTextileImg/gaine9.png";
+
 import { Box, Card, CardBody, CardHeader, Center, Flex, Heading } from "@chakra-ui/react";
 import ProductsSlide from "../../components/HomeComponent/ProductsSlide";
 import { products } from "../../constants";
+import { AuroraBackground } from "../../components/ui/shadcn-io/aurora-background";
 
 const GainTextilePage = () => {
-  const images = [ImgTextile1, ImgTextile2, ImgTextile3, obl1, obl2];
+  const images = [ImgTextile1, ImgTextile2, ImgTextile3, obl1, obl2, gaine1, gaine2, gaine3, gaine4, gaine5, gaine6, gaine7, gaine8, gaine9];
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "../../../public/gaine.pdf"; // Path to your PDF file
@@ -19,7 +30,8 @@ const GainTextilePage = () => {
     document.body.removeChild(link);
   };
   return (
-    <div>
+    <AuroraBackground>
+      <Box>
   <Box display="flex" justifyContent="center" alignItems="center" w="100%" mt="10">
   <Flex justify="center" align="center" mt="50px" gap="50px" flexWrap="wrap">
   <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full items-center">
@@ -68,7 +80,8 @@ const GainTextilePage = () => {
 <Center><Heading mt={20} paddingLeft={0} color="#004F87">Autres Produits</Heading>
 </Center><Center mt={0} marginRight={0}>
 <ProductsSlide slides={products.filter(product => product.id !== 1)} /> </Center>
- </div>
+      </Box>
+    </AuroraBackground>
 )
 };
 

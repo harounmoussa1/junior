@@ -2,18 +2,21 @@ import { Box, Center, Flex } from "@chakra-ui/react";
 import ContactModal from "../components/contactcomponents/ContactModal";
 import GetInTouch from "../components/contactcomponents/GetInTouch";
 import SecondHeader from "../components/navbar/SecondHeader";
+import { AuroraBackground } from "../components/ui/shadcn-io/aurora-background";
+import heroImg from "../assets/hero.png"
 
 const ContactPage = () => {
   return (
-    <div className="w-full">
+    <AuroraBackground>
+      <Box>
       {/* Header Section */}
       <SecondHeader
-        title="Contact Us"
-        subtitle="GET IN TOUCH"
-        imageUrl="/src/assets/Hero.png"
-        height="296px"
-        textsize="16px"
-      />
+          title="Contactez-Nous"
+          subtitle="RESTONS EN CONTACT"
+          imageUrl={heroImg}
+          height="296px"
+          textsize="16px"
+        />
 
       {/* Contact Section */}
       <Box display="flex" justifyContent="center" alignItems="center" w="100%" mt="10">
@@ -44,7 +47,9 @@ const ContactPage = () => {
           ></iframe>
         </div>
       </Center>
-    </div>
+      <br /><br />
+      </Box>
+    </AuroraBackground>
   );
 };
 
