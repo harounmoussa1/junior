@@ -40,19 +40,19 @@ const SlideSwiper = ({ slides, showMultiple = false }: SlideSwiperProps) => {
               // Mobile: 1 slide normal (aligné à gauche)
               0: { 
                 slidesPerView: 1, 
-                spaceBetween: 20,
+                spaceBetween: 15,
                 centeredSlides: false
               },
               // Tablet: 2 slides, CENTRÉ
               768: { 
                 slidesPerView: 2, 
-                spaceBetween: 30,
+                spaceBetween: 20,
                 centeredSlides: true // Activé uniquement sur tablette
               },
               // Desktop: 3 slides normal (aligné à gauche)
               1024: { 
                 slidesPerView: 3, 
-                spaceBetween: 0,
+                spaceBetween: 15,
                 centeredSlides: false
               },
             }

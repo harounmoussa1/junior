@@ -32,7 +32,7 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
       flexDirection="column"
       transition="all 0.3s ease"
       _hover={{ boxShadow: "xl",
-                transform: "translateY(-6px)", // légère élévation
+                transform: "translateY(-6px)", // légère éléva
 
        }} // ombre plus forte au survol
     >
@@ -46,7 +46,6 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           w="100%"
           objectFit="cover"
         />
-
         {/* Title + Description */}
         <Stack mt="4" spacing="3" flex="1">
           <Heading size="md">{name}</Heading>

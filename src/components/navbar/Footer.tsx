@@ -8,7 +8,7 @@ import {
   IconButton,
   Grid,
 } from "@chakra-ui/react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -139,15 +139,15 @@ const Footer = () => {
                 />
               </ChakraLink>
 
-              <ChakraLink href="https://www.instagram.com/" isExternal>
+              <ChakraLink href="https://www.linkedin.com/company/sdair-tunisie/" isExternal>
                 <IconButton
-                  icon={<FaInstagram />}
-                  aria-label="Instagram"
+                  icon={<FaLinkedin />}
+                  aria-label="Linkendin"
                   variant="ghost"
                   color="white"
                   fontSize="22px"
                   _hover={{
-                    color: "#E1306C",
+                    color: "#1877F2",
                     transform: "scale(1.2)",
                   }}
                   transition="all 0.3s ease"

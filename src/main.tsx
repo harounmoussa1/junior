@@ -4,6 +4,7 @@ import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router'
 import AproposPage from './pages/AproposPage.tsx'
 import ContactPage from './pages/ContactPage.tsx'
+import OpinionsPage from './pages/OpinionsPage.tsx'
 import AirbagThPage from './pages/productPages/AirbagThPage.tsx'
 import CouverclePrPage from './pages/productPages/CouverclePrPage.tsx'
 import FiltreUGPage from './pages/productPages/FiltreUGPage.tsx'
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
       <Route path="/" element={<App />} />
       <Route path="/apropos" element={<AproposPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/avis" element={<OpinionsPage />} />
       <Route path="/produits/airbags" element={<AirbagThPage />} />
       <Route path="/produits/isolation-thermique/couvercles" element={<CouverclePrPage />} />
       <Route path="/produits/climatisation/filtres" element={<FiltreUGPage />} />

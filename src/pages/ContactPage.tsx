@@ -1,6 +1,7 @@
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Box, Center, Flex, Container } from "@chakra-ui/react";
 import ContactModal from "../components/contactcomponents/ContactModal";
 import GetInTouch from "../components/contactcomponents/GetInTouch";
+import OpinionsDisplay from "../components/contactcomponents/OpinionsDisplay";
 import SecondHeader from "../components/navbar/SecondHeader";
 import { AuroraBackground } from "../components/ui/shadcn-io/aurora-background";
 import heroImg from "../assets/hero.png"
@@ -34,6 +35,11 @@ const ContactPage = () => {
         </div>
         </Flex>
         </Box>
+
+      {/* Opinions Section */}
+      <Container maxW="container.xl" py={4}>
+        <OpinionsDisplay />
+      </Container>
 
       {/* Google Maps Section */}
       <Center className="w-full mt-14 px-4 lg:px-0">

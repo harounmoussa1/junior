@@ -1,7 +1,7 @@
 import { CardBody, Center, Heading, Stack, Text, Image, Card, SimpleGrid, Box, Input, Flex, Link, IconButton, Button, useToast, Textarea } from "@chakra-ui/react";
 import SecondHeader from "../components/navbar/SecondHeader";
 import { Fondateur_Presentation, ABOUT_TEXT } from '../constants/index.ts';
-import Fondateur1 from "../assets/Fondateur1.png";
+import Fondateur2 from "../assets/Fondateur2.png";
 import entreprise from "../assets/entreprise.png";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import SlideSwiper, { Slide } from "../components/contactcomponents/SlideSwiper";
@@ -74,11 +74,6 @@ const AproposPage = () => {
     fetchOpinions();
   }, []);
 
-
-
-
-
-
   return (
     <div>
       {/* SecondHeader */}
@@ -117,17 +112,17 @@ const AproposPage = () => {
             {ABOUT_TEXT}
           </Text>
           <SimpleGrid mt="80px" columns={{ base: 1, sm: 3 }} spacing={10} justifyContent="center" justifyItems="center">
-            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-white flex flex-col items-center justify-center">
-              <Text className="text-4xl text-[#00AEEB] font-bold">+ 110</Text>
-              <Text className="text-base text-[#004F87] text-1xl font-bold">clients</Text>
+            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-slate-700 flex flex-col items-center justify-center">
+              <Text className="text-4xl text-white font-bold">+ 150</Text>
+              <Text className="text-base text-white text-1xl font-bold">clients</Text>
             </Box>
-            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-white flex flex-col items-center justify-center">
-              <Text className="text-4xl text-[#00AEEB] font-bold">+ 20 km</Text>
-              <Text className="text-base text-[#004F87] text-1xl font-bold">de gaines fabriquées</Text>
+            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-slate-700 flex flex-col items-center justify-center">
+              <Text className="text-4xl text-white font-bold">+ 30 km</Text>
+              <Text className="text-base text-white text-1xl font-bold">de gaines fabriquées</Text>
             </Box>
-            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-white flex flex-col items-center justify-center">
-              <Text className="text-4xl text-[#00AEEB] font-bold">+ 13</Text>
-              <Text className=" text-[#004F87] text-1xl font-bold">gouvernorats livrés</Text>
+            <Box className="shadow-xl w-[185px] h-[85px] rounded-lg bg-slate-700 flex flex-col items-center justify-center">
+              <Text className="text-4xl text-white font-bold">+ 19</Text>
+              <Text className=" text-white text-1xl font-bold">gouvernorats livrés</Text>
             </Box>
           </SimpleGrid>
         </CardBody>
@@ -143,7 +138,7 @@ const AproposPage = () => {
     <Box className="flex justify-center">
       <Image
         className="rounded-md object-fill w-80 h-80 sm:w-96 sm:h-96"
-        src={Fondateur1}
+        src={Fondateur2}
         alt="Fondateur"
       />
     </Box>
