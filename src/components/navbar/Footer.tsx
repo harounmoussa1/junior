@@ -8,7 +8,7 @@ import {
   IconButton,
   Grid,
 } from "@chakra-ui/react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
