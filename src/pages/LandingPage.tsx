@@ -10,15 +10,7 @@ const LandingPage = () => {
   
   return (
     <>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8Z6KSP4X3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L8Z6KSP4X3');
-</script>
+      
       {/* HERO background section (non-fixed, scrolls with page) */}
       <Box
         h="1100px"
