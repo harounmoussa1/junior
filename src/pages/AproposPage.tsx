@@ -76,6 +76,15 @@ const AproposPage = () => {
 
   return (
     <div>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8Z6KSP4X3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L8Z6KSP4X3');
+</script>
       {/* SecondHeader */}
       <SecondHeader
         subtitle="DECOUVRER PLUS D'INFORMATIONS"
