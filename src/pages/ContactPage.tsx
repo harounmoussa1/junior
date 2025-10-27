@@ -9,8 +9,7 @@ import heroImg from "../assets/hero.png"
 const ContactPage = () => {
   return (
     <AuroraBackground>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L8Z6KSP4X3"></script>
+   
 
       <Box>
       {/* Header Section */}
