@@ -9,13 +9,13 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Box
       position="relative"
-      overflow="hidden" // important pour contenir les effets
+      overflow="hidden"
       bgGradient="linear(to-r, #0f172a, #12141D)"
       color="gray.200"
       py={10}
@@ -48,7 +48,6 @@ const Footer = () => {
 
       {/* --- Contenu du footer --- */}
       <Box position="relative" zIndex={2}>
-        {/* Top Section */}
         <Flex
           direction={{ base: "column", md: "row" }}
           justify="space-between"
@@ -59,7 +58,7 @@ const Footer = () => {
           <Flex direction="column" gap={3} flex="1">
             <Flex align="center" gap={3}>
               <Image
-                src="/src/assets/sdaire_logo.png"
+                src="/sdaire_logo_rm.png"
                 boxSize="70px"
                 alt="Logo SD-AIR"
               />
@@ -74,10 +73,7 @@ const Footer = () => {
             </Flex>
             <Text fontSize="sm" color="gray.400" mt={2} lineHeight="1.6">
               SD’air (SARL), fondée en août 2014, est la première société
-              tunisienne spécialisée dans la fabrication de gaines textiles et
-              de manchettes souples. Installée à Jemmel, SD’air collabore avec
-              des installateurs et des revendeurs spécialisés en climatisation
-              et diffusion de l’air.
+              tunisienne spécialisée dans la fabrication de gaines textiles et de manchettes souples. Installée à Jemmel, SD’air collabore avec des installateurs et des revendeurs spécialisés en climatisation et diffusion de l’air.
             </Text>
           </Flex>
 
@@ -171,7 +167,7 @@ const Footer = () => {
         >
           <Flex gap={8}>
             <Link to="/">Accueil</Link>
-            <Text >Nos Produits</Text>
+            <Text>Nos Produits</Text>
             <Link to="/apropos">À propos</Link>
             <Link to="/contact">Contact</Link>
           </Flex>
