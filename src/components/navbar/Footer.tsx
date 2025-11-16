@@ -59,7 +59,7 @@ const Footer = () => {
           <Flex direction="column" gap={3} flex="1">
             <Flex align="center" gap={3}>
               <Image
-                src="/src/assets/sdaire_logo_rm.png"
+                src="/src/assets/sdaire_logo.png"
                 boxSize="70px"
                 alt="Logo SD-AIR"
               />
