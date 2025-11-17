@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
+import logo from '../assets/sdaire_logo_rm.png';
 
 
 const Footer = () => {
@@ -61,7 +62,7 @@ const Footer = () => {
           <Flex direction="column" gap={3} flex="1">
             <Flex align="center" gap={3}>
               <Image
-                src="/src/assets/sdaire_logo_rm.png"
+                src={logo}
                 boxSize="70px"
                 alt="Logo SD-AIR"
               />
