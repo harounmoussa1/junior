@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router";
-import logo from '../assets/sdaire_logo_rm.png';
+import logo from '../../assets/sdaire_logo_rm.png';
 
 
 const Footer = () => {
