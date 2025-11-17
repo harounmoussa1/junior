@@ -8,6 +8,8 @@ import SlideSwiper, { Slide } from "../components/contactcomponents/SlideSwiper"
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { client } from  "../sanity/sanityClient.ts";
+import aproposimg from '../assets/aproposimg.png';
+
 interface IFormInput {
   Name: string;
   avis: string;
@@ -80,7 +82,7 @@ const AproposPage = () => {
       <SecondHeader
         subtitle="DECOUVRER PLUS D'INFORMATIONS"
         title="A Propos De Nous"
-        imageUrl='/src/assets/aproposimg.png'
+        imageUrl={aproposimg}
         height="296px"
         textsize="16px"
       />
