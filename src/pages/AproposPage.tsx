@@ -184,7 +184,7 @@ const AproposPage = () => {
 <Center mt="100px">
         <Heading color="black" >
         <span className="text-[#004F87]">Opinions de   </span>
-        <span className="text-[#00AEEB]">nos clients</span>
+        <span className="text-[#00AEEB]">nos client</span>
         </Heading>
       </Center>
 <Center mt={20}>
