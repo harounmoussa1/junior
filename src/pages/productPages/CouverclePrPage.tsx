@@ -3,9 +3,9 @@ import ProductDetail from '../../components/productdetailpages/ProductDetailPage
 import ProductInfo from '../../components/productdetailpages/ProductInfo';
 import ProductsSlide from '../../components/HomeComponent/ProductsSlide';
 import { products } from '../../constants';
-import c1 from "../../assets/couvercleImg/c1.jpeg";
-import c2 from "../../assets/couvercleImg/c2.jpeg";
-import c3 from "../../assets/couvercleImg/c3.jpeg";
+import c1 from "../../assets/couvercleImg/c1.png";
+import c2 from "../../assets/couvercleImg/c2.png";
+import c3 from "../../assets/couvercleImg/c3.png";
 import { AuroraBackground } from "../../components/ui/shadcn-io/aurora-background";
 
 const CouverclePrPage = () => {

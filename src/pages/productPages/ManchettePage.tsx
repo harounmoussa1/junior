@@ -1,4 +1,4 @@
-import manchette from "../../assets/manchette.jpeg"
+import manchette from "../../assets/manchette.png"
 import { Box, Center, Flex, Heading } from '@chakra-ui/react';
 import ProductDetail from '../../components/productdetailpages/ProductDetailPage';
 import ProductInfo from '../../components/productdetailpages/ProductInfo';

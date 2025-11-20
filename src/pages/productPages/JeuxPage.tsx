@@ -5,12 +5,10 @@ import ProductsSlide from '../../components/HomeComponent/ProductsSlide';
 import { products } from '../../constants';
 import jeux1 from "../../assets/jeuxImg/jeux1.jpg"
 import jeux2 from "../../assets/jeuxImg/jeux2.jpg"
-import JEUX20 from "../../assets/jeuxImg/JEUX20.png"
-import JEUX10 from "../../assets/jeuxImg/JEUX10.png"
 import { AuroraBackground } from "../../components/ui/shadcn-io/aurora-background";
 
 const JeuxPage = () => {
-  const images = [jeux1,jeux2,JEUX20,JEUX10];
+  const images = [jeux1,jeux2];
 
   return (
     <AuroraBackground>

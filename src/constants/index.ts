@@ -1,8 +1,8 @@
 // Import images
 import gainTextileImg from '../assets/productsImages/gain_a.jpg';
 import filtreImg from '../assets/productsImages/filtre_a.jpg';
-import manchetteImg from '../assets/manchette.jpeg';
-import couvercleImg from '../assets/couvercleImg/c1.jpeg';
+import manchetteImg from '../assets/manchette.png';
+import couvercleImg from '../assets/couvercleImg/c1.png';
 import matelasImg from '../assets/productsImages/matelas_a.jpg';
 import airbagImg from '../assets/airbagImg/airbagth1.png';
 import tenteImg from '../assets/tenteIMG/couvercle1.jpg';
