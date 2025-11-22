@@ -65,7 +65,7 @@ const OpinionsSection = () => {
           direction="column"
           align="center"
           mb={{ base: 5, md: 5 }}
-          mt={{ base: 8, md: 40 }}
+          mt={{ base: 5, md: 40 }}
           animation={`${float} 3s ease-in-out infinite`}
         >
           
