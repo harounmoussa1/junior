@@ -3,7 +3,6 @@ import HeroSection from "../components/HomeComponent/HeroSection"
 import NosProduit from "../components/HomeComponent/NosProduit"
 import Process from "../components/HomeComponent/Process"
 import OpinionsSection from "../components/HomeComponent/OpinionsSection";
-import { AuroraBackground } from "../components/ui/shadcn-io/aurora-background";
 import heroImg from "../assets/hero.png";
 
 const LandingPage = () => {
@@ -24,7 +23,6 @@ const LandingPage = () => {
       />
 
       {/* Global Aurora background and page content, pulled over hero bg */}
-      <AuroraBackground>
         <Box mt="-1100px">
           <HeroSection />
           <div >
@@ -35,7 +33,6 @@ const LandingPage = () => {
         </Box>
         <br />
         <br />
-      </AuroraBackground>
     </>
   )
 }

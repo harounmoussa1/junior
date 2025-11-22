@@ -82,7 +82,7 @@ const SlideSwiper = ({ slides, showMultiple = false }: SlideSwiperProps) => {
             borderRadius="20px"
             overflow="hidden"
             boxShadow="md"
-            bgGradient="linear(to-r, #4CABE1, #004F87 )"
+            bgGradient="linear(to-r, #004F87, #285C7A )"
             display="flex"
             flexDirection="column"
             alignItems="center"

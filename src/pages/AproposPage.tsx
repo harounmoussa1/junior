@@ -1,7 +1,7 @@
 import { CardBody, Center, Heading, Stack, Text, Image, Card, SimpleGrid, Box, Input, Flex, Link, IconButton, Button, useToast, Textarea } from "@chakra-ui/react";
 import SecondHeader from "../components/navbar/SecondHeader";
 import { Fondateur_Presentation, ABOUT_TEXT } from '../constants/index.ts';
-import Fondateur2 from "../assets/Fondateur2.png";
+import Fondateur3 from "../assets/Fondateur3.png";
 import entreprise from "../assets/entreprise.png";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import SlideSwiper, { Slide } from "../components/contactcomponents/SlideSwiper";
@@ -140,7 +140,7 @@ const AproposPage = () => {
     <Box className="flex justify-center">
       <Image
         className="rounded-md object-fill w-80 h-80 sm:w-96 sm:h-96"
-        src={Fondateur2}
+        src={Fondateur3}
         alt="Fondateur"
       />
     </Box>
@@ -184,7 +184,7 @@ const AproposPage = () => {
 <Center mt="100px">
         <Heading color="black" >
         <span className="text-[#004F87]">Opinions de   </span>
-        <span className="text-[#00AEEB]">nos client</span>
+        <span className="text-[#00AEEB]">nos clients</span>
         </Heading>
       </Center>
 <Center mt={20}>

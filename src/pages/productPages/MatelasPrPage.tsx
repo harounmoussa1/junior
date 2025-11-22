@@ -8,10 +8,14 @@ import matela2 from "../../assets/matelasImg/matelas2.jpg"
 import matela3 from "../../assets/matelasImg/matelas3.jpg"
 import matela4 from "../../assets/matelasImg/matelas4.jpg"
 import matelas5 from "../../assets/matelasImg/matelas5.jpg"
+import matelas6 from "../../assets/matelasImg/matelas5.jpeg"
+import matelas7 from "../../assets/matelasImg/matelas6.jpeg"
+import matelas8 from "../../assets/matelasImg/matelas7.jpeg"
+
 import { AuroraBackground } from "../../components/ui/shadcn-io/aurora-background";
 
 const MatelasPrPage = () => {
-  const images = [matela1,matela2,matela3,matela4,matelas5];
+  const images = [matela1,matela2,matela3,matela4,matelas5,matelas6,matelas7,matelas8];
 
   return (
     <AuroraBackground>

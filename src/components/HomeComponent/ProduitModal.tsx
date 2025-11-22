@@ -24,12 +24,14 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
 }) => {
   return (
     <Card
-      h="600px"
+      h="550px"
       w="full"
       maxW="380px"
-      boxShadow="20px 0px 15px rgba(0, 0, 0, 0.2)" // ombre normale
+      borderRadius={"lg"}
       display="flex"
       flexDirection="column"
+      border={"1px solid #000000ff"}
+      bg={"#C0D1DD"}
       transition="all 0.3s ease"
       _hover={{ boxShadow: "xl",
                 transform: "translateY(-6px)", // légère éléva
@@ -45,6 +47,8 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
           h="260px"
           w="100%"
           objectFit="cover"
+          bg={"white"}
+          border={"1px solid #6599BD "}
         />
         {/* Title + Description */}
         <Stack mt="4" spacing="3" flex="1">
@@ -63,7 +67,7 @@ const ProduitModal: React.FC<ProduitModalProps> = ({
               border={"1px solid black"}
               w="full"
               h="40px"
-              bg="transparent"
+              bg="white"
               color="black"
               justify="center"
               align="center"

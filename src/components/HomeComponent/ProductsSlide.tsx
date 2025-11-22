@@ -5,8 +5,6 @@ import ProduitModal from "./ProduitModal";
 
 import 'swiper/swiper-bundle.css';
 
-
-
 interface Product {
   id: number;
   name: string;
@@ -43,23 +41,29 @@ const ProductsSlide: React.FC<SlideSwiperProps> = ({ slides }) => {
           spaceBetween: 30,
         },
       }}
-      style={{ width: "100%", maxWidth: "1200px", paddingBottom: "60px" }}
+      style={{
+        width: "100%",
+        maxWidth: "1200px",
+        paddingBottom: "20px",
+        "--swiper-pagination-bottom": "0px",
+        "--swiper-pagination-bullet-inactive-color": "#999999",
+        "--swiper-pagination-color": "#007aff"
+      } as React.CSSProperties}
     >
       {slides.map((product) => (
-     <SwiperSlide
-     key={product.id}
-     className="flex justify-center items-center justify-items-center"
-   >
-     <div className="w-full max-w-[600px] ml-55 md:ml-55 lg:ml-0  ">
-       <ProduitModal
-         name={product.name}
-         description={product.description}
-         imageUrl={product.imageUrl}
-         link={product.link}
-       />
-     </div>
-   </SwiperSlide>
-   
+        <SwiperSlide
+          key={product.id}
+          className="flex justify-center items-center justify-items-center"
+        >
+          <div className="w-full max-w-[600px] mt-20 justify-center items-center justify-items-center  ">
+            <ProduitModal
+              name={product.name}
+              description={product.description}
+              imageUrl={product.imageUrl}
+              link={product.link}
+            />
+          </div>
+        </SwiperSlide>
       ))}
     </Swiper>
   );
