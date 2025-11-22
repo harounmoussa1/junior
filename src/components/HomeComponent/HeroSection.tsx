@@ -42,7 +42,7 @@ const HeroSection = () => {
             mt={{ base: 6, sm: 8, md: 10 }}
             textShadow="2px 4px 15px rgba(0, 0, 0, 0.8)"
             px={{ base: 2, sm: 4, md: 6, lg: 8 }}
-            maxW={{ base: "31%", sm: "90%", md: "85%", lg: "80%" }}
+            maxW={{ base: "90%", sm: "90%", md: "85%", lg: "80%" }}
             mx="auto"
             lineHeight={{ base: 1.3, sm: 1.5, md: 1.6, lg: 1.7 }}
             letterSpacing={{ base: "0.3px", md: "1px" }}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             display="block"
             textShadow="2px 4px 15px rgba(0, 0, 0, 0.8)"
             px={{ base: 2, sm: 4, md: 6, lg: 8 }}
-            maxW={{ base: "31%", sm: "90%", md: "85%", lg: "80%" }}
+            maxW={{ base: "90%", sm: "90%", md: "85%", lg: "80%" }}
             mx="auto"
             lineHeight={{ base: 1.3, sm: 1.5, md: 1.6, lg: 1.7 }}
             letterSpacing={{ base: "0.3px", md: "1px" }}
