@@ -29,7 +29,7 @@ const AirbagThPage = () => {
         </Box>
         <Center><Heading mt={20} paddingLeft={0} color="#004F87">Autres Produits</Heading>
         </Center>
-        <Center mt={0} marginRight={0}>
+        <Center mt={0}>
           <ProductsSlide slides={products.filter(product => product.id !== 6)} /> 
         </Center>
       </Box>
