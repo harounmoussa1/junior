@@ -55,7 +55,7 @@ const ProductsSlide: React.FC<SlideSwiperProps> = ({ slides }) => {
           key={product.id}
           className="flex justify-center items-center justify-items-center"
         >
-          <div className="w-full max-w-[600px] mt-20 justify-center items-center justify-items-center  ">
+          <div className="w-full max-w-[600px] mt-20 flex flex-col justify-center items-center">
             <ProduitModal
               name={product.name}
               description={product.description}
